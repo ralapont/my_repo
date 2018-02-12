@@ -20,6 +20,12 @@
 	  }
 	  
 	});
+	
+    $( "#bxsine" ).click(function() {
+	   $campo = $( "#entrada" );	
+	   resultado = Math.sin($campo.val());
+   	   $campo.val(resultado);
+	});
  
   });
   
@@ -27,10 +33,12 @@
 	
 </head>
 <body>
+	<h1>Calculadora de Rafael Alapont</h1>
     <div class="contenedor">
-      <h1>Calculador x^3</h1>
+      <h1>Calculador x^3 y sin(x)</h1>
       <input type="number" id="entrada" value="0"></input>
       <button id="bxcubo">x^3</button>
+      <button id="bxsine">sin(x)</button>
     </div> 
 </body>
 </html>
