@@ -1,2 +1,1 @@
-# cal
-Educational Git project. Creates a simple calculator in HTML and JavaScript in short steps. 
+Primer fichero en el primer repositorio de Rafael Alapont
