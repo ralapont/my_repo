@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Calculadora x al cubo</title>
+    <title>Calculadora x al cubo y a la cuarta</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
       
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -21,6 +21,17 @@
 	  
 	});
  
+    $( "#bxcuarta" ).click(function() {
+	  $campo = $( "#entrada" );	
+	  if ($campo.val() == 0) {
+		  alert( "Debes introducir un valor" );
+	  } else {
+		  resultado = $campo.val() * $campo.val() * $campo.val() * $campo.val();
+		  $campo.val(resultado);
+	  }
+	  
+	});
+ 
   });
   
   </script>
@@ -28,9 +39,10 @@
 </head>
 <body>
     <div class="contenedor">
-      <h1>Calculador x^3</h1>
+      <h1>Calculador x^3 y x^4</h1>
       <input type="number" id="entrada" value="0"></input>
       <button id="bxcubo">x^3</button>
+      <button id="bxcuarta">x^4</button>
     </div> 
 </body>
 </html>
